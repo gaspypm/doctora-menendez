@@ -51,8 +51,8 @@ export function HeroSection() {
 						</div>
 					</div>
 
-					{/* Image — oculta en móvil */}
-					<div className="order-2 hidden md:flex lg:col-span-2 justify-center lg:justify-end">
+					{/* Image — solo desde lg (~1024px); en tablet ancha se veía mal */}
+					<div className="order-2 hidden lg:flex lg:col-span-2 justify-center lg:justify-end">
 						<div className="relative shrink-0">
 							<div className="absolute -inset-4 bg-secondary/30 rounded-full blur-3xl" />
 							<div className="relative w-80 h-[28rem] lg:w-96 lg:h-[32rem] rounded-2xl overflow-hidden shadow-xl">
