@@ -1,6 +1,8 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Playfair_Display, Inter } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
+import { JsonLd } from "@/components/json-ld";
+import { getSiteUrl, siteConfig } from "@/lib/site-config";
 import "./globals.css";
 
 const playfair = Playfair_Display({
@@ -15,37 +17,71 @@ const inter = Inter({
 	display: "swap",
 });
 
+export const viewport: Viewport = {
+	width: "device-width",
+	initialScale: 1,
+	themeColor: "#004AAB",
+};
+
 export const metadata: Metadata = {
-	title: "Dra. María Fernanda Menendez | Médica Psiquiatra en Montevideo",
-	description:
-		"Atención psiquiátrica profesional y humana para adolescentes, adultos y adultos mayores en Montevideo, Uruguay. Consultas presenciales y virtuales.",
-	keywords: [
-		"psiquiatra",
-		"montevideo",
-		"salud mental",
-		"psiquiatría",
-		"Uruguay",
-		"consulta psiquiátrica",
-	],
-	authors: [{ name: "Dra. María Fernanda Menendez" }],
+	metadataBase: new URL(getSiteUrl()),
+	title: {
+		default: siteConfig.defaultTitle,
+		template: siteConfig.titleTemplate,
+	},
+	description: siteConfig.description,
+	keywords: [...siteConfig.keywords],
+	authors: [{ name: siteConfig.name, url: getSiteUrl() }],
+	creator: siteConfig.name,
+	publisher: siteConfig.name,
+	formatDetection: {
+		email: false,
+		address: false,
+		telephone: false,
+	},
+	robots: {
+		index: true,
+		follow: true,
+		googleBot: {
+			index: true,
+			follow: true,
+			"max-image-preview": "large",
+			"max-snippet": -1,
+			"max-video-preview": -1,
+		},
+	},
+	alternates: {
+		canonical: "/",
+		languages: {
+			"es-UY": "/",
+		},
+	},
+	category: "health",
 	icons: {
 		icon: "/favicon.png",
 		apple: "/favicon.png",
 	},
 	openGraph: {
-		title: "Dra. María Fernanda Menendez | Médica Psiquiatra",
-		description:
-			"Un espacio profesional y humano para priorizar tu salud mental.",
-		locale: "es_UY",
 		type: "website",
-		images: ["/og/default-og.jpg"],
+		locale: siteConfig.locale,
+		url: "/",
+		siteName: siteConfig.name,
+		title: siteConfig.defaultTitle,
+		description: siteConfig.description,
+		images: [
+			{
+				url: siteConfig.ogImage,
+				width: 1200,
+				height: 630,
+				alt: `${siteConfig.name} — Médica Psiquiatra en Montevideo`,
+			},
+		],
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Dra. María Fernanda Menendez | Médica Psiquiatra",
-		description:
-			"Un espacio profesional y humano para priorizar tu salud mental.",
-		images: ["/og/default-og.jpg"],
+		title: siteConfig.defaultTitle,
+		description: siteConfig.description,
+		images: [siteConfig.ogImage],
 	},
 };
 
@@ -76,6 +112,7 @@ export default function RootLayout({
 			<body
 				className={`${playfair.variable} ${inter.variable} font-sans antialiased`}
 			>
+				<JsonLd />
 				{children}
 				<Analytics />
 			</body>
