@@ -26,7 +26,7 @@ export function Header() {
             <Logo className="w-10 h-10" />
             <div className="hidden sm:block">
               <p className="font-serif text-lg font-medium text-foreground">
-                Dra. María Fernanda Menendez
+                Dra. María Fernanda Menéndez
               </p>
               <p className="text-xs text-muted-foreground">Médica Psiquiatra</p>
             </div>

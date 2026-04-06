@@ -1,6 +1,6 @@
-# Dra. María Fernanda Menendez — Médica Psiquiatra (Montevideo, Uruguay)
+# Dra. María Fernanda Menéndez — Médica Psiquiatra (Montevideo, Uruguay)
 
-> Sitio oficial de la Dra. María Fernanda Menendez: atención psiquiátrica para adolescentes, adultos y adultos mayores. Consultas presenciales en Malvín (Montevideo) y virtuales. Reserva de turnos online.
+> Sitio oficial de la Dra. María Fernanda Menéndez: atención psiquiátrica para adolescentes, adultos y adultos mayores. Consultas presenciales en Malvín (Montevideo) y virtuales. Reserva de turnos online.
 
 ## Páginas principales
 
@@ -9,7 +9,7 @@
 
 ## Cómo citar
 
-Nombre: Dra. María Fernanda Menendez
+Nombre: Dra. María Fernanda Menéndez
 Profesión: Médica Psiquiatra
 Ubicación: Malvín, Montevideo, Uruguay
 Modalidad: presencial y virtual

@@ -11,7 +11,7 @@ export function AboutSection() {
 						<div className="relative aspect-[3/4] md:aspect-[4/5] rounded-2xl overflow-hidden">
 							<Image
 								src="/images/perfil2.jpg"
-								alt="Dra. María Fernanda Menendez en consulta"
+								alt="Dra. María Fernanda Menéndez en consulta"
 								fill
 								className="object-cover"
 							/>
@@ -24,7 +24,7 @@ export function AboutSection() {
 							Sobre la doctora
 						</span>
 						<h2 className="mt-3 font-serif text-3xl md:text-4xl font-medium text-foreground leading-tight text-balance">
-							Dra. María Fernanda Menendez
+							Dra. María Fernanda Menéndez
 						</h2>
 
 						<div className="mt-8 space-y-5 text-muted-foreground leading-relaxed">

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     canonical: '/turnos',
   },
   openGraph: {
-    title: `${title} | Dra. María Fernanda Menendez`,
+    title: `${title} | Dra. María Fernanda Menéndez`,
     description: 'Reservá tu turno de psiquiatría online. Consultas presenciales y virtuales.',
     url: '/turnos',
     images: [
@@ -19,13 +19,13 @@ export const metadata: Metadata = {
         url: '/images/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Dra. María Fernanda Menendez - Médica Psiquiatra en Montevideo',
+        alt: 'Dra. María Fernanda Menéndez - Médica Psiquiatra en Montevideo',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: `${title} | Dra. María Fernanda Menendez`,
+    title: `${title} | Dra. María Fernanda Menéndez`,
     description: 'Reservá tu turno de psiquiatría online. Consultas presenciales y virtuales.',
     images: ['/images/og-image.png'],
   },

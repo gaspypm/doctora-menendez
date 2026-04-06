@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { LogoMark } from "./logo"
-import { Instagram } from "lucide-react"
+import { Instagram, Mail } from "lucide-react"
 
 export function Footer() {
   return (
@@ -13,7 +13,7 @@ export function Footer() {
               <LogoMark className="w-8 h-8" />
               <div>
                 <p className="font-serif text-lg font-medium text-foreground">
-                  Dra. María Fernanda Menendez
+                  Dra. María Fernanda Menéndez
                 </p>
                 <p className="text-sm text-muted-foreground">Médica Psiquiatra</p>
               </div>
@@ -62,13 +62,24 @@ export function Footer() {
               </li>
               <li>
                 <a 
-                  href="https://instagram.com" 
+                  href="https://instagram.com/doctora_menendez" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
                 >
                   <Instagram className="w-4 h-4" />
                   Instagram
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="mailto:contacto@doctoramenendez.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
+                >
+                  <Mail className="w-4 h-4" />
+                  Email
                 </a>
               </li>
             </ul>
@@ -79,7 +90,7 @@ export function Footer() {
         <div className="mt-12 pt-8 border-t border-border">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-xs text-muted-foreground">
-              © {new Date().getFullYear()} Dra. María Fernanda Menendez. Todos los derechos reservados.
+              © {new Date().getFullYear()} Dra. María Fernanda Menéndez. Todos los derechos reservados.
             </p>
             <p className="text-xs text-muted-foreground text-center md:text-right max-w-md">
               Este sitio brinda información institucional y no sustituye una consulta médica.

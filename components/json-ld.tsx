@@ -21,7 +21,7 @@ export function JsonLd() {
 			"@context": "https://schema.org",
 			"@type": "Physician",
 			"@id": `${siteUrl}/#physician`,
-			name: "María Fernanda Menendez",
+			name: "María Fernanda Menéndez",
 			honorificPrefix: "Dra.",
 			jobTitle: "Médica Psiquiatra",
 			medicalSpecialty: {

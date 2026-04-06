@@ -5,7 +5,7 @@ export function Logo({ className = "w-10 h-10" }: { className?: string }) {
     <div className={className}>
       <Image
         src="/images/logo.png"
-        alt="Logo Dra. María Fernanda Menendez"
+        alt="Logo Dra. María Fernanda Menéndez"
         width={40}
         height={40}
         className="w-full h-full object-contain"

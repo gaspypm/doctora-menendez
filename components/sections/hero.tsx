@@ -58,7 +58,7 @@ export function HeroSection() {
 							<div className="relative w-80 h-[28rem] lg:w-96 lg:h-[32rem] rounded-2xl overflow-hidden shadow-xl">
 								<Image
 									src="/images/perfil1.jpg"
-									alt="Dra. María Fernanda Menendez - Médica Psiquiatra"
+									alt="Dra. María Fernanda Menéndez - Médica Psiquiatra"
 									fill
 									className="object-cover object-top"
 									priority

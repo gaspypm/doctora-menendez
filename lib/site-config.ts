@@ -10,10 +10,10 @@ export function getSiteUrl(): string {
 }
 
 export const siteConfig = {
-	name: "Dra. María Fernanda Menendez",
-	titleTemplate: "%s | Dra. María Fernanda Menendez",
+	name: "Dra. María Fernanda Menéndez",
+	titleTemplate: "%s | Dra. María Fernanda Menéndez",
 	defaultTitle:
-		"Dra. María Fernanda Menendez | Médica Psiquiatra en Montevideo",
+		"Dra. María Fernanda Menéndez | Médica Psiquiatra en Montevideo",
 	description:
 		"Atención psiquiátrica profesional y humana para adolescentes, adultos y adultos mayores en Montevideo, Uruguay. Consultas presenciales y virtuales en Malvín.",
 	keywords: [

@@ -74,13 +74,6 @@ export default function TurnosPage() {
 								</AccordionItem>
 							))}
 						</Accordion>
-
-						<div className="mt-12 p-6 rounded-2xl bg-muted/30 text-center">
-							<p className="text-muted-foreground">
-								¿No encontrás un horario adecuado? Dejá tu consulta y me
-								comunicaré contigo para coordinar.
-							</p>
-						</div>
 					</div>
 				</section>
 			</main>

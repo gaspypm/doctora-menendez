@@ -9,7 +9,7 @@ export function QuoteSection() {
           &ldquo;Te espero en un espacio pensado para tu comodidad, con escucha abierta para comenzar a priorizar tu salud mental.&rdquo;
         </blockquote>
         <p className="mt-8 text-muted-foreground">
-          — Dra. María Fernanda Menendez
+          — Dra. María Fernanda Menéndez
         </p>
       </div>
     </section>
