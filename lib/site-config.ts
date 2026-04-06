@@ -1,12 +1,11 @@
 /**
- * URL pública del sitio. Definí NEXT_PUBLIC_SITE_URL en producción (ej. https://tudominio.uy).
- * En Vercel se infiere de VERCEL_URL si no está definida.
+ * URL pública del sitio. Definí NEXT_PUBLIC_SITE_URL en producción o usará el dominio oficial.
  */
 export function getSiteUrl(): string {
 	const env = process.env.NEXT_PUBLIC_SITE_URL;
 	if (env) return env.replace(/\/$/, "");
-	if (process.env.VERCEL_URL) return `https://${process.env.VERCEL_URL}`;
-	return "http://localhost:3000";
+	if (process.env.NODE_ENV === "development") return "http://localhost:3000";
+	return "https://www.doctoramenendez.com";
 }
 
 export const siteConfig = {
