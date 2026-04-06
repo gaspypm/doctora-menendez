@@ -24,12 +24,7 @@ const faqs = [
 	{
 		question: "¿Cómo se confirma la reserva?",
 		answer:
-			"La reserva queda confirmada cuando recibas un mensaje de confirmación de mi parte. Si no encontrás un horario adecuado, podés dejar tu consulta y me comunicaré contigo para coordinar.",
-	},
-	{
-		question: "¿Atiende con obra social o mutualista?",
-		answer:
-			"Actualmente trabajo en COSEM donde se atiende a afiliados. Para consultas particulares, podés consultar sobre convenios o reintegros según tu cobertura.",
+			"Elegí fecha y horario en el calendario. Completá tus datos en el mismo proceso. La reserva se confirma mediante el pago con al menos 24hs de anticipación.",
 	},
 ];
 
@@ -45,8 +40,9 @@ export default function TurnosPage() {
 								Reservar turno
 							</h1>
 							<p className="mt-4 text-lg text-muted-foreground leading-relaxed">
-								Elegí fecha y horario en el calendario. Completá tus datos en el
-								mismo proceso; la cita queda sujeta a confirmación.
+								Elegí fecha y horario en el calendario.<br />
+								Completá tus datos en el mismo proceso.<br />
+								La reserva se confirma mediante el pago con al menos 24hs de anticipación.
 							</p>
 						</div>
 					</div>

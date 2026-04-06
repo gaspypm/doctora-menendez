@@ -20,9 +20,9 @@ export function HeroSection() {
 							Un espacio profesional y humano para priorizar tu salud mental
 						</h1>
 						<p className="mt-6 text-lg text-muted-foreground leading-relaxed max-w-xl">
-							Atención psiquiátrica para adolescentes, adultos y adultos mayores
-							en Montevideo, con un enfoque cálido, profesional y basado en la
-							escucha.
+							Atención psiquiátrica y psicoterapia para adolescentes, adultos y
+							adultos mayores en Montevideo, con un enfoque cálido, profesional y
+							basado en la escucha.
 						</p>
 
 						{/* CTAs */}

@@ -42,8 +42,8 @@ export function AboutSection() {
 							</p>
 							<p>
 								Complementé mi formación con estudios en Terapia
-								Cognitivo-Conductual en SUAMOC, lo que me permite ofrecer un
-								abordaje integral que combina tratamiento farmacológico con
+								Cognitivo-Conductual en SUAMOC y Terapia EMDR en el EMDR Institute, Inc., lo que me permite ofrecer un
+								abordaje integral que combina tratamiento farmacológico si es necesario con
 								herramientas terapéuticas basadas en evidencia.
 							</p>
 							<p>
@@ -56,22 +56,45 @@ export function AboutSection() {
 
 						{/* Credentials */}
 						<div className="mt-10 grid grid-cols-2 gap-4">
-							<div className="p-4 rounded-xl bg-muted/50">
+							<a
+								href="https://www.fmed.edu.uy/"
+								target="_blank"
+								rel="noopener noreferrer"
+								className="p-4 rounded-xl bg-muted/50 hover:bg-muted transition-colors"
+							>
 								<p className="text-2xl font-serif font-medium text-primary">
 									UdelaR
 								</p>
 								<p className="text-sm text-muted-foreground mt-1">
 									Facultad de Medicina
 								</p>
-							</div>
-							<div className="p-4 rounded-xl bg-muted/50">
+							</a>
+							<a
+								href="https://www.suamoc.com.uy/"
+								target="_blank"
+								rel="noopener noreferrer"
+								className="p-4 rounded-xl bg-muted/50 hover:bg-muted transition-colors"
+							>
 								<p className="text-2xl font-serif font-medium text-primary">
 									SUAMOC
 								</p>
 								<p className="text-sm text-muted-foreground mt-1">
-									Terapia Cognitivo-Conductual
+									Sociedad Uruguaya de Análisis y Modificación de la Conducta
 								</p>
-							</div>
+							</a>
+							<a
+								href="https://www.emdr.com/"
+								target="_blank"
+								rel="noopener noreferrer"
+								className="p-4 rounded-xl bg-muted/50 hover:bg-muted transition-colors"
+							>
+								<p className="text-2xl font-serif font-medium text-primary">
+									EMDR
+								</p>
+								<p className="text-sm text-muted-foreground mt-1">
+									EMDR Institute, Inc.
+								</p>
+							</a>
 						</div>
 					</div>
 				</div>

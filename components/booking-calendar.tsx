@@ -25,7 +25,7 @@ export function BookingCalendar() {
 	return (
 		<Cal
 			namespace="40min"
-			calLink="gaspar-pm-zx5sqj/40min"
+			calLink="gaspar-pm-zx5sqj/50min"
 			style={{ width: "100%", height: "100%", overflow: "scroll" }}
 			config={{
 				layout: "month_view",
