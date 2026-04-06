@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export function AboutSection() {
 	return (
-		<section id="sobre-mi" className="py-20 lg:py-28 bg-background">
+		<section id="sobre-mi" aria-labelledby="about-heading" className="py-20 lg:py-28 bg-background">
 			<div className="mx-auto max-w-7xl px-6 lg:px-8">
 				<div className="grid lg:grid-cols-2 gap-10 lg:gap-20 items-center">
 					{/* Image — altura acotada en móvil para no ocupar toda la pantalla al hacer scroll */}
@@ -23,7 +23,7 @@ export function AboutSection() {
 						<span className="text-sm font-medium text-primary uppercase tracking-wider">
 							Sobre la doctora
 						</span>
-						<h2 className="mt-3 font-serif text-3xl md:text-4xl font-medium text-foreground leading-tight text-balance">
+						<h2 id="about-heading" className="mt-3 font-serif text-3xl md:text-4xl font-medium text-foreground leading-tight text-balance">
 							Dra. María Fernanda Menéndez
 						</h2>
 

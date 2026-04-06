@@ -20,7 +20,7 @@ const inter = Inter({
 export const viewport: Viewport = {
 	width: "device-width",
 	initialScale: 1,
-	themeColor: "#004AAB",
+	viewportFit: "cover",
 };
 
 export const metadata: Metadata = {
@@ -38,6 +38,11 @@ export const metadata: Metadata = {
 		email: false,
 		address: false,
 		telephone: false,
+	},
+	appleWebApp: {
+		capable: true,
+		statusBarStyle: "black-translucent",
+		title: "Menendez",
 	},
 	robots: {
 		index: true,
@@ -91,7 +96,7 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="es">
+		<html lang="es" className="bg-background">
 			<head>
 				<link
 					rel="icon"

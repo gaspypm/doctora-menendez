@@ -14,7 +14,8 @@ const approaches = [
   {
     icon: Monitor,
     title: "Consultas presenciales y virtuales",
-    description: "Flexibilidad para elegir la modalidad que mejor se ajuste a tu rutina y comodidad."
+    description: "Flexibilidad para elegir la modalidad que mejor se ajuste a tu rutina y comodidad.",
+    href: "/turnos"
   },
   {
     icon: Sparkles,
@@ -25,13 +26,13 @@ const approaches = [
 
 export function ApproachSection() {
   return (
-    <section id="enfoque" className="py-20 lg:py-28 bg-muted/30">
+    <section id="enfoque" aria-labelledby="approach-heading" className="py-20 lg:py-28 bg-muted/30">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="text-center max-w-2xl mx-auto">
           <span className="text-sm font-medium text-primary uppercase tracking-wider">
             Enfoque
           </span>
-          <h2 className="mt-3 font-serif text-3xl md:text-4xl font-medium text-foreground leading-tight text-balance">
+          <h2 id="approach-heading" className="mt-3 font-serif text-3xl md:text-4xl font-medium text-foreground leading-tight text-balance">
             Un espacio hecho para tu comodidad
           </h2>
           <p className="mt-6 text-lg text-muted-foreground leading-relaxed">

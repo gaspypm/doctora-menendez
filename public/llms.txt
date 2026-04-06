@@ -1,19 +1,34 @@
-# Dra. María Fernanda Menéndez — Médica Psiquiatra (Montevideo, Uruguay)
+# Dra. María Fernanda Menéndez - Médica Psiquiatra
 
-> Sitio oficial de la Dra. María Fernanda Menéndez: atención psiquiátrica para adolescentes, adultos y adultos mayores. Consultas presenciales en Malvín (Montevideo) y virtuales. Reserva de turnos online.
+> Médica Psiquiatra en Montevideo, Uruguay, enfocada en atención a adolescentes, adultos y adultos mayores.
 
-## Páginas principales
+## Sobre la Doctora
+Dra. María Fernanda Menéndez es una profesional egresada de la Universidad de la República (UdelaR), con residencia en el Hospital Pasteur y el Hospital Vilardebó. Posee formación especializada en Terapia Cognitivo-Conductual (SUAMOC) e intervenciones de Terapia EMDR (EMDR Institute, Inc.). Su práctica combina el rigor científico, la terapéutica farmacológica y herramientas basadas en evidencia, manteniendo siempre una conexión humana y cálida.
 
-- / — Inicio: presentación, enfoque, áreas, proceso y contacto.
-- /turnos — Solicitud y reserva de turno (agenda).
+- **Ubicación:** Malvín, Montevideo, Uruguay.
+- **Modalidad de atención:** Consultas presenciales y virtuales (Telemedicina).
+- **Contacto Directo:** contacto@doctoramenendez.com
+- **Instagram:** https://instagram.com/doctora_menendez
 
-## Cómo citar
+## Áreas de Interés Tratadas
+- Ansiedad
+- Depresión
+- Insomnio
+- Estrés
+- Estrés Postraumático (TEPT)
+- Síndrome de Burnout
+- Dificultades en los vínculos interpersonales
+- Patrones repetitivos en las relaciones
+- Experiencias traumáticas y asuntos no resueltos
 
-Nombre: Dra. María Fernanda Menéndez
-Profesión: Médica Psiquiatra
-Ubicación: Malvín, Montevideo, Uruguay
-Modalidad: presencial y virtual
+## Enfoque de Tratamiento
+1. **Escucha y Acompañamiento:** Un espacio seguro, sin juicios.
+2. **Atención Personalizada:** Adaptada a las necesidades e historia de cada paciente.
+3. **Comodidad:** Opciones de atención virtual y presencial.
+4. **Abordaje Integral:** Combinación de psicoterapia y farmacología si resulta necesario.
 
-## Nota
+## Reserva de Turnos
+Los turnos se coordinan de manera online. Las reservas se bloquean al abonar la consulta con al menos 24 horas de antelación.
 
-Para la URL canónica y metadatos actualizados, usar el dominio público del sitio (ver sitemap.xml y metadatos HTML).
+---
+Para más detalles, interactuar con el sitio web oficial.

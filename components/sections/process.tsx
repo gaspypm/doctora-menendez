@@ -23,13 +23,13 @@ const steps = [
 
 export function ProcessSection() {
   return (
-    <section className="py-20 lg:py-28 bg-muted/30">
+    <section id="proceso" aria-labelledby="process-heading" className="py-20 lg:py-28 bg-muted/30">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="text-center max-w-2xl mx-auto">
           <span className="text-sm font-medium text-primary uppercase tracking-wider">
             Cómo son las consultas
           </span>
-          <h2 className="mt-3 font-serif text-3xl md:text-4xl font-medium text-foreground leading-tight text-balance">
+          <h2 id="process-heading" className="mt-3 font-serif text-3xl md:text-4xl font-medium text-foreground leading-tight text-balance">
             Reservar es muy sencillo
           </h2>
           <p className="mt-6 text-lg text-muted-foreground leading-relaxed">

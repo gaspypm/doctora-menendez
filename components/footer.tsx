@@ -4,7 +4,7 @@ import { Instagram, Mail } from "lucide-react"
 
 export function Footer() {
   return (
-    <footer className="bg-muted/50 border-t border-border">
+    <footer className="bg-muted/50 border-t border-border pb-[env(safe-area-inset-bottom)]">
       <div className="mx-auto max-w-7xl px-6 lg:px-8 py-12 lg:py-16">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand */}
@@ -24,8 +24,8 @@ export function Footer() {
           </div>
 
           {/* Links */}
-          <div>
-            <h3 className="font-medium text-foreground mb-4">Navegación</h3>
+          <nav aria-labelledby="footer-nav-heading">
+            <h3 id="footer-nav-heading" className="font-medium text-foreground mb-4">Navegación</h3>
             <ul className="space-y-3">
               <li>
                 <Link href="/" className="text-sm text-muted-foreground hover:text-primary transition-colors">
@@ -48,17 +48,19 @@ export function Footer() {
                 </Link>
               </li>
             </ul>
-          </div>
+          </nav>
 
           {/* Contact */}
-          <div>
-            <h3 className="font-medium text-foreground mb-4">Contacto</h3>
+          <address aria-labelledby="footer-contact-heading" className="not-italic">
+            <h3 id="footer-contact-heading" className="font-medium text-foreground mb-4">Contacto</h3>
             <ul className="space-y-3">
               <li className="text-sm text-muted-foreground">
                 Malvín, Montevideo
               </li>
-              <li className="text-sm text-muted-foreground">
-                Consultas presenciales y virtuales
+              <li>
+                <Link href="/turnos" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  Consultas presenciales y virtuales
+                </Link>
               </li>
               <li>
                 <a 
@@ -83,15 +85,27 @@ export function Footer() {
                 </a>
               </li>
             </ul>
-          </div>
+          </address>
         </div>
 
         {/* Bottom */}
         <div className="mt-12 pt-8 border-t border-border">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-xs text-muted-foreground">
-              © {new Date().getFullYear()} Dra. María Fernanda Menéndez. Todos los derechos reservados.
-            </p>
+            <div className="flex flex-col items-center md:items-start gap-2">
+              <p className="text-xs text-muted-foreground">
+                © {new Date().getFullYear()} Dra. María Fernanda Menéndez. Todos los derechos reservados.
+              </p>
+              <div className="flex items-center gap-2">
+                <span className="text-xs text-muted-foreground">Sitio por</span>
+                <a href="https://368bis.com/" target="_blank" rel="noopener noreferrer" className="opacity-60 hover:opacity-100 transition-opacity">
+                  <img 
+                    src="https://res.cloudinary.com/dfymg44dc/image/upload/v1773356167/logo_blanco.png" 
+                    alt="368bis" 
+                    className="h-8 inset-0 invert dark:invert-0 object-contain" 
+                  />
+                </a>
+              </div>
+            </div>
             <p className="text-xs text-muted-foreground text-center md:text-right max-w-md">
               Este sitio brinda información institucional y no sustituye una consulta médica.
             </p>

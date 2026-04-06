@@ -30,13 +30,13 @@ export function ContactSection() {
   }
 
   return (
-    <section id="contacto" className="py-20 lg:py-28 bg-background">
+    <section id="contacto" aria-labelledby="contact-heading" className="py-20 lg:py-28 bg-background">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="max-w-3xl mx-auto text-center">
           <span className="text-sm font-medium text-primary uppercase tracking-wider">
             Contacto
           </span>
-          <h2 className="mt-3 font-serif text-3xl md:text-4xl font-medium text-foreground leading-tight text-balance">
+          <h2 id="contact-heading" className="mt-3 font-serif text-3xl md:text-4xl font-medium text-foreground leading-tight text-balance">
             Comenzá tu camino hacia el bienestar
           </h2>
           <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
@@ -59,7 +59,7 @@ export function ContactSection() {
                 <div className="flex justify-center gap-3">
                   <a 
                     href="mailto:contacto@doctoramenendez.com" 
-                    className="w-12 h-12 rounded-xl bg-secondary/50 flex items-center justify-center hover:bg-secondary/70 transition-colors"
+                    className="w-12 h-12 rounded-xl bg-secondary/50 flex items-center justify-center hover:bg-secondary/70 hover:scale-110 transition-all"
                     aria-label="Enviar email"
                   >
                     <Mail className="w-6 h-6 text-primary" />
@@ -68,7 +68,7 @@ export function ContactSection() {
                     href="https://instagram.com/doctora_menendez" 
                     target="_blank" 
                     rel="noopener noreferrer" 
-                    className="w-12 h-12 rounded-xl bg-secondary/50 flex items-center justify-center hover:bg-secondary/70 transition-colors"
+                    className="w-12 h-12 rounded-xl bg-secondary/50 flex items-center justify-center hover:bg-secondary/70 hover:scale-110 transition-all"
                     aria-label="Visitar Instagram"
                   >
                     <Instagram className="w-6 h-6 text-primary" />
@@ -80,12 +80,15 @@ export function ContactSection() {
                 </p>
               </div>
 
-              <div className="p-6 rounded-2xl bg-muted/30">
+              <Link 
+                href="/turnos"
+                className="p-6 rounded-2xl bg-muted/30 hover:bg-muted/50 transition-colors cursor-pointer group block"
+              >
                 <div className="flex justify-center gap-3">
-                  <div className="w-12 h-12 rounded-xl bg-secondary/50 flex items-center justify-center">
+                  <div className="w-12 h-12 rounded-xl bg-secondary/50 flex items-center justify-center group-hover:scale-110 transition-transform">
                     <Armchair className="w-6 h-6 text-primary" />
                   </div>
-                  <div className="w-12 h-12 rounded-xl bg-secondary/50 flex items-center justify-center">
+                  <div className="w-12 h-12 rounded-xl bg-secondary/50 flex items-center justify-center group-hover:scale-110 transition-transform">
                     <Monitor className="w-6 h-6 text-primary" />
                   </div>
                 </div>
@@ -94,10 +97,13 @@ export function ContactSection() {
                   Consultas presenciales<br />
                   y virtuales
                 </p>
-              </div>
+              </Link>
 
-              <div className="p-6 rounded-2xl bg-muted/30">
-                <div className="w-12 h-12 rounded-xl bg-secondary/50 flex items-center justify-center mx-auto">
+              <Link 
+                href="/turnos"
+                className="p-6 rounded-2xl bg-muted/30 hover:bg-muted/50 transition-colors cursor-pointer group block"
+              >
+                <div className="w-12 h-12 rounded-xl bg-secondary/50 flex items-center justify-center mx-auto group-hover:scale-110 transition-transform">
                   <Calendar className="w-6 h-6 text-primary" />
                 </div>
                 <h3 className="mt-4 font-medium text-foreground">Turnos</h3>
@@ -105,7 +111,7 @@ export function ContactSection() {
                   Agenda online<br />
                   disponible
                 </p>
-              </div>
+              </Link>
             </div>
 
           <div className="mt-16 grid md:grid-cols-2 gap-12 text-left">
@@ -136,18 +142,21 @@ export function ContactSection() {
               </form>
             </div>
 
-            <div className="p-8 rounded-2xl bg-secondary/30 border border-border/40 flex flex-col justify-center items-center text-center">
-              <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center mb-6">
+            <Link 
+              href="/turnos"
+              className="p-8 rounded-2xl bg-secondary/30 border border-border/40 flex flex-col justify-center items-center text-center hover:bg-secondary/40 transition-colors cursor-pointer group"
+            >
+              <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center mb-6 group-hover:scale-105 transition-transform">
                 <Calendar className="w-8 h-8 text-primary" />
               </div>
               <h3 className="text-2xl font-serif text-foreground mb-4">Reservá tu turno</h3>
               <p className="text-muted-foreground mb-8 max-w-sm">
                 Conocé mi disponibilidad y agendá una consulta online o presencial en el momento que prefieras.
               </p>
-              <Button asChild size="lg" className="px-10 w-full sm:w-auto">
-                <Link href="/turnos">Agendar online</Link>
+              <Button size="lg" className="px-10 w-full sm:w-auto pointer-events-none">
+                Agendar online
               </Button>
-            </div>
+            </Link>
           </div>
         </div>
       </div>

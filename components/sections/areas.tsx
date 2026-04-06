@@ -25,13 +25,13 @@ const areaRows: Area[][] = [
 
 export function AreasSection() {
   return (
-    <section className="py-20 lg:py-28 bg-background">
+    <section id="areas" aria-labelledby="areas-heading" className="py-20 lg:py-28 bg-background">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="text-center max-w-2xl mx-auto">
           <span className="text-sm font-medium text-primary uppercase tracking-wider">
             Áreas de interés
           </span>
-          <h2 className="mt-3 font-serif text-3xl md:text-4xl font-medium text-foreground leading-tight text-balance">
+          <h2 id="areas-heading" className="mt-3 font-serif text-3xl md:text-4xl font-medium text-foreground leading-tight text-balance">
             Consultas más frecuentes
           </h2>
           <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
