@@ -2,11 +2,11 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 
 const mockSchedule = [
-  { day: "Lun", date: "24", slots: [{ time: "09:00", available: true }, { time: "11:00", available: false }, { time: "15:00", available: true }] },
-  { day: "Mar", date: "25", slots: [{ time: "10:00", available: true }, { time: "14:00", available: true }, { time: "16:00", available: false }] },
-  { day: "Mié", date: "26", slots: [{ time: "09:00", available: false }, { time: "11:00", available: true }, { time: "17:00", available: true }] },
-  { day: "Jue", date: "27", slots: [{ time: "10:00", available: true }, { time: "12:00", available: false }, { time: "15:00", available: true }] },
-  { day: "Vie", date: "28", slots: [{ time: "09:00", available: true }, { time: "11:00", available: true }, { time: "14:00", available: false }] },
+  { day: "Lun", date: "24", slots: [{ time: "14:00", available: true }, { time: "15:00", available: false }, { time: "16:00", available: true }] },
+  { day: "Mar", date: "25", slots: [{ time: "15:00", available: true }, { time: "16:00", available: true }, { time: "17:00", available: false }] },
+  { day: "Mié", date: "26", slots: [{ time: "14:00", available: false }, { time: "15:00", available: true }, { time: "16:00", available: true }] },
+  { day: "Jue", date: "27", slots: [{ time: "15:00", available: true }, { time: "16:00", available: false }, { time: "17:00", available: true }] },
+  { day: "Vie", date: "28", slots: [{ time: "14:00", available: true }, { time: "15:00", available: true }, { time: "16:00", available: false }] },
 ]
 
 export function BookingPreviewSection() {
