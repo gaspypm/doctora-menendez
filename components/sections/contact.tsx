@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import Link from "next/link"
+import Script from "next/script"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
@@ -13,17 +14,43 @@ export function ContactSection() {
   const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
     setResult("Enviando...")
+    
     const formData = new FormData(event.currentTarget)
-    formData.append("access_key", "8d2b4640-7f29-420a-a3fe-ecedd4169927")
+    // Turnstile inyecta este campo en el form automáticamente
+    const token = formData.get("cf-turnstile-response")
+
+    if (!token) {
+      setResult("Por favor, completá la validación de seguridad.")
+      return
+    }
+
+    const dataFormulario = Object.fromEntries(formData.entries())
 
     try {
-      const response = await fetch("https://api.web3forms.com/submit", {
+      const response = await fetch("/api/form", {
         method: "POST",
-        body: formData
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          ...dataFormulario,
+          token,
+        }),
       })
 
       const data = await response.json()
-      setResult(data.success ? "¡Mensaje enviado con éxito!" : "Ocurrió un error. Por favor intentá nuevamente.")
+      
+      if (data.ok) {
+        setResult("¡Mensaje enviado con éxito!")
+        const formElement = event.target as HTMLFormElement
+        formElement.reset()
+        // Reseteamos el widget por si quieren mandar otro mensaje
+        if (typeof window !== "undefined" && (window as any).turnstile) {
+          (window as any).turnstile.reset()
+        }
+      } else {
+        setResult(data.error || "Ocurrió un error. Por favor intentá nuevamente.")
+      }
     } catch (error) {
       setResult("Ocurrió un error. Por favor intentá nuevamente.")
     }
@@ -31,6 +58,7 @@ export function ContactSection() {
 
   return (
     <section id="contacto" aria-labelledby="contact-heading" className="py-20 lg:py-28 bg-background">
+      <Script src="https://challenges.cloudflare.com/turnstile/v0/api.js" strategy="afterInteractive" />
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="max-w-3xl mx-auto text-center">
           <span className="text-sm font-medium text-primary uppercase tracking-wider">
@@ -133,6 +161,13 @@ export function ContactSection() {
                 <div className="space-y-2">
                   <Textarea name="message" required placeholder="Tu mensaje..." rows={4} className="bg-background resize-none" />
                 </div>
+                
+                <div 
+                  className="cf-turnstile" 
+                  data-sitekey={process.env.NEXT_PUBLIC_TURNSTILE_CLIENT_KEY || ""} 
+                  data-theme="light"
+                ></div>
+
                 <Button type="submit" size="lg" className="w-full">
                   Enviar mensaje
                 </Button>
