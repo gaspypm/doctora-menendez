@@ -14,10 +14,9 @@ export function ContactSection() {
     event.preventDefault()
     setResult("Enviando...")
     const formData = new FormData(event.currentTarget)
-    formData.append("access_key", "8d2b4640-7f29-420a-a3fe-ecedd4169927")
 
     try {
-      const response = await fetch("https://api.web3forms.com/submit", {
+      const response = await fetch("/api/contact", {
         method: "POST",
         body: formData
       })
@@ -121,6 +120,7 @@ export function ContactSection() {
                 Dejame tu consulta y te responderé en breve.
               </p>
               <form onSubmit={onSubmit} className="space-y-4">
+                <input type="text" name="botcheck" className="hidden" tabIndex={-1} autoComplete="off" aria-hidden="true" />
                 <div className="space-y-2">
                   <Input type="text" name="name" required placeholder="Nombre completo" className="bg-background" />
                 </div>
@@ -137,7 +137,7 @@ export function ContactSection() {
                   Enviar mensaje
                 </Button>
                 {result && (
-                  <p className="text-sm font-medium text-center text-foreground mt-4">{result}</p>
+                  <p className="text-sm font-medium text-center text-foreground mt-4">Por favor contáctese por Instagram: @doctora_menendez{/*{result}*/}</p>
                 )}
               </form>
             </div>

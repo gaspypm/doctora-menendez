@@ -73,7 +73,7 @@ export function Footer() {
                   Instagram
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a 
                   href="mailto:contacto@doctoramenendez.com" 
                   target="_blank" 
@@ -83,7 +83,7 @@ export function Footer() {
                   <Mail className="w-4 h-4" />
                   Email
                 </a>
-              </li>
+              </li> */}
             </ul>
           </address>
         </div>
